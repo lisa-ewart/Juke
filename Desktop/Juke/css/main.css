@@ -1,0 +1,211 @@
+/* CURRENTLY IN: styles/main.css */
+html, body {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+
+#spotify-player .col {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#spotify-player .col__left {
+	width: 300px;
+	height: 100%;
+	overflow: hidden;
+
+	width: auto;
+
+}
+
+#spotify-player .col__right {
+	overflow: auto;
+	box-sizing: border-box;
+	padding-left: 20%;
+	float:right;
+	
+}
+
+#spotify-player .main {
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 5px;
+}
+
+#spotify-player .input {
+	width: 100%;
+}
+
+#spotify-player .input__search {
+	width: 50%;
+	display: block;
+}
+
+#spotify-player .search.icon {
+	pointer-events: initial;
+	cursor: pointer;
+}
+
+#spotify-player .search-results {
+
+}
+
+#spotify-player .playlist-track{
+	background-color: black;
+	color:orange;
+	margin-right:10px;
+	width:30%;
+}
+
+#spotify-player .playlist-content{
+/*	color: white;*/
+	margin-left: 5px;
+}
+
+
+.landingImage {
+/*	min-height: 800px;*/
+/*	background-position: center;*/
+/*	background-size: cover;*/
+/*	background-image:url('../assets/images/dandelion blue.jpg');*/
+}
+
+.slogan_larger_text {
+	color: white;
+	margin-top: 30px;
+	text-align: center;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.cs_fixedBar {
+/*	background-color: #000A3B !important;*/
+}
+
+.cs_searchBar {
+		width: 900px;
+}
+
+.fontStuff {
+	color: white !important;
+	font-family: 'Della Respira', serif;
+	font-size: large
+}
+
+.cs_fixedSearchbar {
+	background-color:mediumslateblue  !important;
+	height: 50px;
+}
+
+.playButton{
+	position: absolute;
+   display: block;
+	color: orange;
+   top: 70%;
+   left: 10%;
+/*   margin: -20px 20px 0 0;*/
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.playlist-close{
+	margin-left: 5px;
+	color:white;
+}
+.cs_itemBar {
+	margin-left: 100px;
+}
+
+.pageWrapper {
+/*	marg*/
+		
+}
+
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	body {
+		-ms-overflow-style: scrollbar;
+	}
+
+	html, body {
+		height: 100%;
+		overflow-x: hidden;
+		width: 100%;
+	}
+
+		@media screen and (max-height: 640px) {
+
+			html, body {
+				height: auto;
+				min-height: 100%;
+			}
+
+		}
+
+	body {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		background-color: #000;
+		padding: 2em 1em 1em 1em;
+	}
+
+		body > * {
+			position: relative;
+			z-index: 2;
+		}
+
+		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+#spotify-player .playlistTitle {
+	margin-top: 70px;
+	color: grey !important;
+	font-family: 'Helvetica neue', serif;
+	font-size: large;
+	text-align:left;
+}
+
+
+#spotify-player .playlistBar {
+	width: 300px;
+	overflow: hidden;
+}
+
+.searchTitle {
+	margin-top: 25px;
+	color: white !important;
+	font-family: 'Della Respira', serif;
+	font-size: large
+}
